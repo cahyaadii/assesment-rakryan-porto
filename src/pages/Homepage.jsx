@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Aboutme from '../content/Aboutme.jsx'
+import AboutMe from '../content/Aboutme.jsx'
 import Projects from '../content/Projects'
 import Services from '../content/Services'
 import Contact from '../content/Contact'
@@ -9,7 +9,7 @@ const Homepage = () => {
     return (
         <div className="font-poppins">
             <Navbar />
-            <Aboutme />
+            <AboutMe />
             <Services />
             <Projects />
             <Contact />
