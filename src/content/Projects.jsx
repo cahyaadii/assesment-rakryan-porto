@@ -31,15 +31,15 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white max-w-6xl py-16">
-      <div className="px-4 mx-auto">
+    <section className="bg-white py-16">
+      <div className="px-4 max-w-6xl mx-auto">
         <div className="flex flex-col items-center justify-center gap-8 lg:max-w-[600px] mx-auto text-center">
           <h2 className="text-5xl font-bold">Projects</h2>
         <p className="text-gray-500">
           Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
           mauris est risus lectus. Phasellus consequat urna tellus
         </p>
-        <div className="flex flex-wrap gap-4 py-4">
+        <div className="flex flex-wrap justify-center gap-4 py-4">
           {buttons.map((button) => (
             <button
               key={button.id}
@@ -55,7 +55,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-8">
         {ProjectItems.map((project) => (
           <div key={project.id} className="bg-[#FFEBDB] p-4 rounded-lg">
             <img src={project.imageFront} alt={project.title} className="absolute h-[309px] w-[206px]" />
