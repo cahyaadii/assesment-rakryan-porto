@@ -31,9 +31,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className="bg-white max-w-6xl mx-auto py-16">
-      <div className="flex flex-col items-center justify-center gap-8 lg:max-w-[600px] mx-auto text-center">
-        <h2 className="text-5xl font-bold">Projects</h2>
+    <section className="bg-white max-w-6xl py-16">
+      <div className="px-4 mx-auto">
+        <div className="flex flex-col items-center justify-center gap-8 lg:max-w-[600px] mx-auto text-center">
+          <h2 className="text-5xl font-bold">Projects</h2>
         <p className="text-gray-500">
           Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
           mauris est risus lectus. Phasellus consequat urna tellus
@@ -54,7 +55,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {ProjectItems.map((project) => (
           <div key={project.id} className="bg-[#FFEBDB] p-4 rounded-lg">
             <img src={project.imageFront} alt={project.title} className="absolute h-[309px] w-[206px]" />
@@ -66,8 +67,9 @@ const Projects = () => {
             </button>
           </div>
         ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
